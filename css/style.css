@@ -232,7 +232,7 @@ form .form-group .input-group textarea {
   display: inline-block;
   border: none;
   background-color: var(--primary-color);
-  color: #fff;
+  color: #fff !important;
   font-size: 0.90rem;
   background-color: rgb(252, 80, 0);
   padding: 0.50rem 2rem;
@@ -246,14 +246,14 @@ form .form-group .input-group textarea {
 }
 
 footer {
-  background-color: #222222;
-  font-size: 0.80rem
+  background-color: #222222 !important;
+  font-size: 0.80rem !important;
 }
 footer .container .lead {
-  font-size: 0.95rem;
+  font-size: 0.95rem !important;
 }
 footer .container .lead a {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 
