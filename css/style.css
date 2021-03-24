@@ -157,7 +157,7 @@ section {
 .health-service .container .row .col-md-3 h4,
 .health-service .container .card-deck .card-title,
 .features .container .row .card-deck .card h5,
-.service-hours .container .row .col-md-6 h2 {
+.service-hours .container .row .col-md-6 h4 {
   font-weight: 900 !important;
 }
 
@@ -204,18 +204,60 @@ section {
   background-color: rgba(5, 5, 255, 0.432);
 }
 
+.service-hours .container .row .bg-white {
+  margin-top: -5%;
+  box-shadow: 1px 1px 2px 3px #f0f0f0;
+}
+.service-hours .container .row .col-md-6 .days {
+  display: inline;
+  font-size: 0.75rem;
+  margin-right: 10rem;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
+input[type=date],
 form .form-group .input-group textarea {
-  background: #222222 !important;
-  border: none !important;
+  color: #000 !important;
   border-radius: 0 !important;
-  font-size: 0.95rem !important;
+  font-size: 0.80rem !important;
+  outline: thin !important;
 }
 form .form-group .input-group textarea {
   height: 100px !important;
 }
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 0.90rem;
+  background-color: rgb(252, 80, 0);
+  padding: 0.50rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: opacity 1s ease-in;
+}
+.btn:hover {
+  opacity: 0.9;
+  color: inherit;
+}
+
+footer {
+  background-color: #222222;
+  font-size: 0.80rem
+}
+footer .container .lead {
+  font-size: 0.95rem;
+}
+footer .container .lead a {
+  color: #ffffff;
+}
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -239,6 +281,24 @@ form .form-group .input-group textarea {
   .features .container .pb-5 {
     padding: 0%;
   }
+  .service-hours {
+    margin-top: -6rem !important;
+  }
+  .service-hours .container .row .bg-white {
+    margin-top: 5rem;
+  }
+  .service-hours .container .row .col-md-6 .days {
+    margin-right: 3rem;
+  }
+  .service-hours .container .row .col-md-6 .mt-4 .days {
+    margin-right: 5.3rem;
+  }
+  footer .container .row .col-md-7 .main-nav .main-nav__item {
+    float: none;
+  }
+  footer .container .row .col-md-7 .main-nav .main-nav__item .main-nav__items {
+    display: block;
+  }  
 }
 @media(max-width:320px) {
   .showcase .showcase-inner .display-4 {
@@ -246,5 +306,19 @@ form .form-group .input-group textarea {
   }
   .showcase .showcase-inner .lead {
     font-size: 0.80rem;
+  }
+  .service-hours .container .row .col-md-6 .days {
+    margin-right: 2rem;
+  }
+  .service-hours .container .row .col-md-6 .mt-4 .days {
+    margin-right: 3.6rem;
+  }
+}
+@media(min-width:280px) {
+  .service-hours .container .row .col-md-6 .days {
+    margin-right: 1rem;
+  }
+  .service-hours .container .row .col-md-6 .mt-4 .days {
+    margin-right: 2.3rem;
   }
 }
